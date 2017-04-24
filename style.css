@@ -195,9 +195,15 @@ button.active {
 
 @media screen and (min-width: 480px) {
     .map-tile {
-        height: 40px;
+        height: 35px;
     }
     .legend-wrapper {
         float: right;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .map-title {
+        height: 40px;
     }
 }
