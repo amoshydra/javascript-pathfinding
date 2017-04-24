@@ -29,7 +29,8 @@ button.active {
 .wrapper {
     display: block;
     margin: 0 auto;
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     position: relative;
 }
 
@@ -46,11 +47,17 @@ button.active {
 .map-tile {
     border: 2px solid #aaa;
     width: 40px;
-    height: 40px;
+    height: 20px;
     margin: 0;
     padding: 0;
     cursor: pointer;
     position: relative;
+}
+
+@media screen and (min-width: 480px) {
+    .map-tile {
+        height: 40px;
+    }
 }
 
 /*.map-tile:hover {
